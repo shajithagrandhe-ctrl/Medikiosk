@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'chief_complaint_screen.dart';
+import 'clinical_questions_screen.dart';
+import 'ayush_system_selection_screen.dart';
 
 class ConsultationTypeScreen extends StatefulWidget {
   const ConsultationTypeScreen({super.key});
@@ -18,12 +19,21 @@ class _ConsultationTypeScreenState extends State<ConsultationTypeScreen> {
     });
   }
   void continueToNextScreen() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const ChiefComplaintScreen(),
-      ),
-    );
+    if (selectedConsultationType == 'General Clinical History') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const ChiefComplaintScreen(),
+        ),
+      );
+    } else if (selectedConsultationType == 'AYUSH / Ayurvedic History') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const AyushSystemSelectionScreen(),
+        ),
+      );
+    }
   }
 
   @override

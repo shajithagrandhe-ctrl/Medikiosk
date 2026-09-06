@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'ayush_treatment_history_screen.dart';
 class AyushHistoryScreen extends StatefulWidget {
   const AyushHistoryScreen({super.key});
 
