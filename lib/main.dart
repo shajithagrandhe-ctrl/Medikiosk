@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'Welcome_screen.dart';
-
+import 'doctor_dashboard_screen.dart';
 void main() {
   runApp(const MediKioskApp());
 }

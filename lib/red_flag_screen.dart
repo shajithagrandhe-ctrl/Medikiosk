@@ -85,9 +85,10 @@ class _RedFlagScreenState extends State<RedFlagScreen> {
           },
         ),
       ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
           child: Column(
             children: [
               const SizedBox(height: 20),
@@ -160,7 +161,7 @@ class _RedFlagScreenState extends State<RedFlagScreen> {
                 ),
               ),
 
-              const Spacer(),
+              const SizedBox(height:30),
 
               // Continue Button
               SizedBox(
@@ -189,7 +190,7 @@ class _RedFlagScreenState extends State<RedFlagScreen> {
           ),
         ),
       ),
-    );
+    ));
   }
 }
 

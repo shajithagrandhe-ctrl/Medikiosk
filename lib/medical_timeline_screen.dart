@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'patient_summary_screen.dart';
 
 class MedicalTimelineScreen extends StatelessWidget {
   const MedicalTimelineScreen({super.key});
@@ -141,11 +142,10 @@ class MedicalTimelineScreen extends StatelessWidget {
                 height: 58,
                 child: FilledButton(
                   onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                          'Patient Summary coming next.',
-                        ),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PatientSummaryScreen(),
                       ),
                     );
                   },
