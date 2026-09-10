@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'Welcome_screen.dart';
 import 'doctor_dashboard_screen.dart';
+import 'voice_test_screen.dart';
 void main() {
   runApp(const MediKioskApp());
 }
@@ -29,8 +30,8 @@ class MediKioskApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-
-      home: const WelcomeScreen(),
+     // home: const VoiceTestScreen(),
+     home: const WelcomeScreen(),
     );
   }
 }
